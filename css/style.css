@@ -118,11 +118,7 @@ footer .text-center {
 }
 
 /* Responsive Design */
-@media (max-width: 767px) {
-    .carousel-inner img {
-        height: 300px;
-    }
-
+@media (max-width: 720px) {
     .aside {
         text-align: center;
     }
