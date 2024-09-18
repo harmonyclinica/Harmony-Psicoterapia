@@ -9,12 +9,12 @@ body {
 
 /* Header */
 header {
-    background-color: #14279B; /* Corregido el color de fondo a un verde más suave */
+    background-color: #14279B; /* Color de fondo para el header */
     padding: 10px 0;
 }
 
 .navbar-brand img {
-    width: 60px; /* Tamaño más pequeño y ajustado para el logo en la navbar */
+    width: 60px; /* Tamaño del logo en la navbar */
 }
 
 .navbar-nav .nav-link {
@@ -36,7 +36,7 @@ header {
 }
 
 /* Carousel */
-.carousel{
+.carousel {
     width: 60%;
     margin: 20px auto;
 }
@@ -50,7 +50,6 @@ header {
 .aside {
     background-color: #E2DAD6;
     padding: 40px 20px;
-
 }
 
 .aside h3 {
@@ -84,13 +83,13 @@ footer a {
     color: #fff;
     text-decoration: none;
     display: flex;
-    flex-direction: column; /* Cambiar la dirección para alinear los íconos debajo del texto */
-    align-items: center; /* Centrar los íconos y el texto */
-    margin-bottom: 15px; /* Espaciado entre los enlaces */
+    flex-direction: column; /* Alinea íconos debajo del texto */
+    align-items: center; /* Centra íconos y texto */
+    margin-bottom: 15px; /* Espaciado entre enlaces */
 }
 
 footer a img {
-    margin-top: 5px; /* Espacio entre el texto y el ícono */
+    margin-top: 5px; /* Espacio entre texto y ícono */
 }
 
 footer a:hover {
@@ -101,8 +100,8 @@ footer a:hover {
 footer .social-icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar los íconos en el footer */
-    gap: 20px; /* Espaciado entre los íconos */
+    justify-content: center; /* Centra íconos en el footer */
+    gap: 20px; /* Espaciado entre íconos */
 }
 
 footer .social-icons a {
@@ -128,6 +127,6 @@ footer .text-center {
     }
     
     footer .social-icons {
-        justify-content: center; /* Centrar los íconos en pantallas pequeñas */
+        justify-content: center; /* Centra íconos en pantallas pequeñas */
     }
 }
