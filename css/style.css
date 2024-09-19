@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -11,6 +17,7 @@ body {
 header {
     background-color: #14279B; /* Color de fondo para el header */
     padding: 10px 0;
+    font-family: "Quicksand", sans-serif;
 }
 
 .navbar-brand img {
@@ -35,6 +42,10 @@ header {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+main{
+    margin-bottom: 60px;
+}
+
 /* Carousel */
 .carousel {
     width: 60%;
@@ -49,7 +60,8 @@ header {
 /* Aside */
 .aside {
     background-color: #E2DAD6;
-    padding: 40px 20px;
+    font-family: "Quicksand", system-ui;
+    padding: 20px;
 }
 
 .aside h3 {
@@ -67,6 +79,7 @@ footer {
     background-color: #14279B;
     color: #fff;
     padding: 40px 20px;
+    font-family: "Quicksand", system-ui;
 }
 
 footer h5 {
@@ -85,7 +98,6 @@ footer a {
     display: flex;
     flex-direction: column; /* Alinea íconos debajo del texto */
     align-items: center; /* Centra íconos y texto */
-    margin-bottom: 15px; /* Espaciado entre enlaces */
 }
 
 footer a img {
