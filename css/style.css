@@ -11,8 +11,8 @@ body {
 
 /* Header */
 header {
-    background-color: #0B0F3C; /* Color de fondo para el header */
-    padding: 10px 0;
+    background-color: #E2DAD6; /* Color de fondo para el header */
+    padding: 20px 0;
     transition: background-color 0.3s ease; /* Transición suave en el background */
 }
 
@@ -22,18 +22,21 @@ header {
 }
 
 .navbar-nav .nav-link {
-    color: #E2DAD6;
+    color: #E2DAD6; /* Color del texto en beige */
     font-size: 18px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
+    border-radius: 40px; /* Asegura que siempre tenga bordes redondeados */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y color del enlace */
 }
 
 .navbar-nav .nav-link:hover, 
-.navbar-nav .nav-link.active {
-    background-color: #14279B;
-    border-radius: 5px;
-    color: #E2DAD6;
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:focus, 
+.navbar-nav .nav-link:active {
+    background-color: #E2DAD6; /* Mantén el fondo beige */
+    color: #0B0F3C; /* Cambia a beige también el texto en estado activo */
+    border-radius: 40px;
 }
 
 .navbar-toggler {
@@ -59,6 +62,20 @@ header {
 .navbar-toggler:hover {
     box-shadow: 0 0 0 1px #E2DAD6; /* Beige al hacer hover */
 }
+
+/* Efecto de navbar flotante con bordes redondeados */
+.navbar {
+    background-color: #0B0F3C; /* Fondo sólido */
+    border-radius: 40px; /* Bordes redondeados */
+    padding: 20px 20px;
+    margin-top: 20px; /* Espacio desde la parte superior */
+    position: relative;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    transition: all 0.3s ease-in-out; /* Suaviza el efecto de hover */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 main {
     margin-bottom: 60px;
@@ -97,7 +114,7 @@ aside {
     margin-top: 40px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1.5fr 0.5fr;
-    gap: 50px 50px;
+    gap: 30px 30px;
     grid-auto-flow: row;
     grid-template-areas:
       "columna1 columna2 columna3"
@@ -144,6 +161,48 @@ footer p {
 
 footer .logofinal{
     margin-top: 20px;
+}
+
+/* Estilos para el aside */
+.aside-content {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.aside-content h3 {
+    color: #14279B;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.aside-content h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.aside-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.aside-content strong {
+    color: #3D56B2;
+}
+
+.aside-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.aside-content ul li {
+    margin-bottom: 10px;
+    color: #555;
 }
 
 /* Responsive Design */
