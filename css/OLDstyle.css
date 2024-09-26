@@ -465,71 +465,6 @@ footer{
 }
   
 /* Ajuste para pantallas pequeñas (smartphones) */
-@media (max-width: 768px) {
-    .contenedorf {
-      grid-template-columns: 1fr; /* Solo una columna */
-      grid-template-rows: auto; /* Las filas se adaptan al contenido */
-      gap: 20px; /* Espacio entre los elementos */
-      grid-template-areas:
-        "fop1"
-        "fop2"
-        "fop3"
-        "fop4"
-        "fop5"
-        "fop6"
-        "fop7"
-        "fop8"
-        "fop9";
-    }
-  
-    /* Ajustes de los contenedores para pantallas pequeñas */
-    .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
-      margin-left: 20px;  /* Añadir margen lateral izquierdo */
-      margin-right: 20px; /* Añadir margen lateral derecho */
-      padding: 30px; /* Ajustar padding para mejor visualización en móviles */
-      height: auto; /* Permitir que la altura sea dinámica */
-      text-align: center; /* Alinear texto en el centro */
-    }
-  
-    /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
-    .fop2, .fop5, .fop6, .fop7, .fop8 {
-      border-radius: 20px;
-    }
-  }
-  
-  /* Ajustes para pantallas más pequeñas (menos de 480px) */
-  @media (max-width: 480px) {
-    .contenedorf {
-      grid-template-columns: 1fr; /* Solo una columna */
-      grid-template-rows: auto; /* Las filas se adaptan al contenido */
-      gap: 20px; /* Espacio entre los elementos */
-      grid-template-areas:
-        "fop1"
-        "fop2"
-        "fop3"
-        "fop4"
-        "fop5"
-        "fop6"
-        "fop7"
-        "fop8"
-        "fop9";
-    }
-  
-    /* Ajustes de los contenedores para pantallas pequeñas */
-    .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
-      margin-left: 10px;  /* Ajustar márgenes laterales */
-      margin-right: 10px;
-      padding: 20px; /* Ajustar padding para mejor visualización en móviles */
-      height: auto; /* Permitir que la altura sea dinámica */
-      text-align: center; /* Alinear texto en el centro */
-    }
-  
-    /* Mantener bordes redondeados pero más pequeños */
-    .fop2, .fop5, .fop6, .fop7, .fop8 {
-      border-radius: 20px;
-    }
-  }
-  
   /* Ajustes para pantallas medianas (hasta 1280px) */
   @media (max-width: 1280px) {
     .contenedorf {
@@ -562,3 +497,115 @@ footer{
       border-radius: 30px;
     }
   }
+
+  @media (max-width: 768px) {
+    .contenedorf {
+      grid-template-columns: 1fr; /* Solo una columna */
+      grid-template-rows: auto; /* Las filas se adaptan al contenido */
+      gap: 20px; /* Espacio entre los elementos */
+      grid-template-areas:
+        "fop1"
+        "fop2"
+        "fop3"
+        "fop4"
+        "fop5"
+        "fop6"
+        "fop7"
+        "fop8"
+        "fop9";
+    }
+  
+    /* Ajustes de los contenedores para pantallas pequeñas */
+    .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
+      margin-left: 20px;  /* Añadir margen lateral izquierdo */
+      margin-right: 20px; /* Añadir margen lateral derecho */
+      padding: 30px; /* Ajustar padding para mejor visualización en móviles */
+      height: auto; /* Permitir que la altura sea dinámica */
+      text-align: center; /* Alinear texto en el centro */
+    }
+  
+    /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
+    .fop2, .fop5, .fop6, .fop7, .fop8 {
+      border-radius: 20px;
+    }
+  }
+
+    /* Ajustes para pantallas más pequeñas (menos de 480px) */
+    @media (max-width: 480px) {
+        .contenedorf {
+          grid-template-columns: 1fr; /* Solo una columna */
+          grid-template-rows: auto; /* Las filas se adaptan al contenido */
+          gap: 20px; /* Espacio entre los elementos */
+          grid-template-areas:
+            "fop1"
+            "fop2"
+            "fop3"
+            "fop4"
+            "fop5"
+            "fop6"
+            "fop7"
+            "fop8"
+            "fop9";
+        }
+      
+        /* Ajustes de los contenedores para pantallas pequeñas */
+        .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
+          margin-left: 10px;  /* Ajustar márgenes laterales */
+          margin-right: 10px;
+          padding: 20px; /* Ajustar padding para mejor visualización en móviles */
+          height: auto; /* Permitir que la altura sea dinámica */
+          text-align: center; /* Alinear texto en el centro */
+        }
+      
+        /* Mantener bordes redondeados pero más pequeños */
+        .fop2, .fop5, .fop6, .fop7, .fop8 {
+          border-radius: 20px;
+        }
+
+        .fop8 h2 {
+            font-size: 1rem; /* Aumenta el tamaño de la fuente, ajusta según tu necesidad */
+            font-weight: bold; /* Puedes ajustar el peso de la letra si lo deseas */
+            color: #0B0F3C; /* Asegúrate de que el color contraste bien con el fondo */
+            margin: 0; /* Ajusta márgenes si es necesario */
+    }
+      }
+
+      @media (max-width: 360px) {
+        .contenedorf {
+            grid-template-columns: 1fr; /* Solo una columna */
+            grid-template-rows: auto; /* Las filas se adaptan al contenido */
+            gap: 10px; /* Reducir el espacio entre los elementos */
+            grid-template-areas:
+                "fop1"
+                "fop2"
+                "fop3"
+                "fop4"
+                "fop5"
+                "fop6"
+                "fop7"
+                "fop8"
+                "fop9";
+        }
+    
+        /* Ajustes de los contenedores para pantallas pequeñas */
+        .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
+            margin: 0 auto;  /* Centramos los elementos horizontalmente */
+            width: 90%; /* Ajustamos el ancho para dar margen en los lados */
+            padding: 15px; /* Reducir el padding */
+            height: auto; /* Permitir que la altura sea dinámica */
+            text-align: center; /* Alinear texto en el centro */
+            font-size: 14px; /* Ajustar tamaño de fuente para pantallas pequeñas */
+        }
+    
+        /* Mantener bordes redondeados pero más pequeños */
+        .fop2, .fop5, .fop6, .fop7, .fop8 {
+            border-radius: 15px; /* Reducir ligeramente el radio de los bordes */
+        }
+
+        .fop8 h2 {
+            font-size: 1rem; /* Aumenta el tamaño de la fuente, ajusta según tu necesidad */
+            font-weight: bold; /* Puedes ajustar el peso de la letra si lo deseas */
+            color: #0B0F3C; /* Asegúrate de que el color contraste bien con el fondo */
+            margin: 0; /* Ajusta márgenes si es necesario */
+    }
+}
