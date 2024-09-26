@@ -158,6 +158,10 @@ header {
     color: #0B0F3C; /* Texto azul oscuro */
 }
 
+.navbar {
+    position: relative; /* Permite que los dropdowns se posicionen respecto a la navbar */
+}
+
 /* Carousel */
 .carousel {
     width: 60%;
@@ -437,6 +441,7 @@ footer{
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
     text-align: center;
+    height: 300px;
 }
 
 .fop8 h2 {
