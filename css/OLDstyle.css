@@ -450,3 +450,97 @@ footer{
     font-size: 1rem;
     color: white;
 }
+  
+  /* Ajuste para pantallas pequeñas (smartphones) */
+  @media (max-width: 768px) {
+    .contenedorf {
+      grid-template-columns: 1fr; /* Solo una columna */
+      grid-template-rows: auto; /* Las filas se adaptan al contenido */
+      gap: 20px; /* Espacio entre los elementos */
+      grid-template-areas:
+        "fop1"
+        "fop2"
+        "fop3"
+        "fop4"
+        "fop5"
+        "fop6"
+        "fop7"
+        "fop8"
+        "fop9";
+    }
+  
+    /* Ajustes de los contenedores para pantallas pequeñas */
+    .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
+      margin-left: 0;  /* Eliminar márgenes laterales */
+      margin-right: 0;
+      padding: 20px; /* Ajustar padding para mejor visualización en móviles */
+      height: auto; /* Permitir que la altura sea dinámica */
+    }
+  
+    /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
+    .fop2, .fop5, .fop6, .fop7, .fop8 {
+      border-radius: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contenedorf {
+      grid-template-columns: 1fr; /* Solo una columna */
+      grid-template-rows: auto; /* Las filas se adaptan al contenido */
+      gap: 20px; /* Espacio entre los elementos */
+      grid-template-areas:
+        "fop1"
+        "fop2"
+        "fop3"
+        "fop4"
+        "fop5"
+        "fop6"
+        "fop7"
+        "fop8"
+        "fop9";
+    }
+  
+    /* Ajustes de los contenedores para pantallas pequeñas */
+    .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
+      margin-left: 0;  /* Eliminar márgenes laterales */
+      margin-right: 0;
+      padding: 20px; /* Ajustar padding para mejor visualización en móviles */
+      height: auto; /* Permitir que la altura sea dinámica */
+    }
+  
+    /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
+    .fop2, .fop5, .fop6, .fop7, .fop8 {
+      border-radius: 20px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .contenedorf {
+      grid-template-columns: 1fr; /* Solo una columna */
+      grid-template-rows: auto; /* Las filas se adaptan al contenido */
+      gap: 20px; /* Espacio entre los elementos */
+      grid-template-areas:
+        "fop1"
+        "fop2"
+        "fop3"
+        "fop4"
+        "fop5"
+        "fop6"
+        "fop7"
+        "fop8"
+        "fop9";
+    }
+  
+    /* Ajustes de los contenedores para pantallas pequeñas */
+    .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
+      margin-left: 0;  /* Eliminar márgenes laterales */
+      margin-right: 0;
+      padding: 20px; /* Ajustar padding para mejor visualización en móviles */
+      height: auto; /* Permitir que la altura sea dinámica */
+    }
+  
+    /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
+    .fop2, .fop5, .fop6, .fop7, .fop8 {
+      border-radius: 20px;
+    }
+  }
