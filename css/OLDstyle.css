@@ -266,6 +266,8 @@ footer{
   .fop9 { grid-area: fop9; }
   
   .fop1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
     display: flex; /* Habilitar flexbox */
     flex-direction: column; /* Disponer los elementos en una columna (uno debajo del otro) */
     justify-content: center; /* Centrar verticalmente */
@@ -435,7 +437,13 @@ footer{
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
     text-align: center;
-    height: 300px;
+}
+
+.fop8 h2 {
+    font-size: 3rem; /* Aumenta el tamaño de la fuente, ajusta según tu necesidad */
+    font-weight: bold; /* Puedes ajustar el peso de la letra si lo deseas */
+    color: #0B0F3C; /* Asegúrate de que el color contraste bien con el fondo */
+    margin: 0; /* Ajusta márgenes si es necesario */
 }
 
 .fop9{
@@ -451,8 +459,8 @@ footer{
     color: white;
 }
   
-  /* Ajuste para pantallas pequeñas (smartphones) */
-  @media (max-width: 768px) {
+/* Ajuste para pantallas pequeñas (smartphones) */
+@media (max-width: 768px) {
     .contenedorf {
       grid-template-columns: 1fr; /* Solo una columna */
       grid-template-rows: auto; /* Las filas se adaptan al contenido */
@@ -471,10 +479,11 @@ footer{
   
     /* Ajustes de los contenedores para pantallas pequeñas */
     .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
-      margin-left: 0;  /* Eliminar márgenes laterales */
-      margin-right: 0;
-      padding: 20px; /* Ajustar padding para mejor visualización en móviles */
+      margin-left: 20px;  /* Añadir margen lateral izquierdo */
+      margin-right: 20px; /* Añadir margen lateral derecho */
+      padding: 30px; /* Ajustar padding para mejor visualización en móviles */
       height: auto; /* Permitir que la altura sea dinámica */
+      text-align: center; /* Alinear texto en el centro */
     }
   
     /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
@@ -482,7 +491,8 @@ footer{
       border-radius: 20px;
     }
   }
-
+  
+  /* Ajustes para pantallas más pequeñas (menos de 480px) */
   @media (max-width: 480px) {
     .contenedorf {
       grid-template-columns: 1fr; /* Solo una columna */
@@ -502,18 +512,20 @@ footer{
   
     /* Ajustes de los contenedores para pantallas pequeñas */
     .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
-      margin-left: 0;  /* Eliminar márgenes laterales */
-      margin-right: 0;
+      margin-left: 10px;  /* Ajustar márgenes laterales */
+      margin-right: 10px;
       padding: 20px; /* Ajustar padding para mejor visualización en móviles */
       height: auto; /* Permitir que la altura sea dinámica */
+      text-align: center; /* Alinear texto en el centro */
     }
   
-    /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
+    /* Mantener bordes redondeados pero más pequeños */
     .fop2, .fop5, .fop6, .fop7, .fop8 {
       border-radius: 20px;
     }
   }
-
+  
+  /* Ajustes para pantallas medianas (hasta 1280px) */
   @media (max-width: 1280px) {
     .contenedorf {
       grid-template-columns: 1fr; /* Solo una columna */
@@ -531,16 +543,17 @@ footer{
         "fop9";
     }
   
-    /* Ajustes de los contenedores para pantallas pequeñas */
+    /* Ajustes de los contenedores para pantallas medianas */
     .fop1, .fop2, .fop3, .fop4, .fop5, .fop6, .fop7, .fop8, .fop9 {
-      margin-left: 0;  /* Eliminar márgenes laterales */
-      margin-right: 0;
-      padding: 20px; /* Ajustar padding para mejor visualización en móviles */
+      margin-left: 30px;  /* Añadir margen lateral izquierdo */
+      margin-right: 30px; /* Añadir margen lateral derecho */
+      padding: 40px; /* Mayor padding para mejorar visualización en pantallas medianas */
       height: auto; /* Permitir que la altura sea dinámica */
+      text-align: center; /* Alinear texto en el centro */
     }
   
-    /* Quitar el borde redondeado en las esquinas en pantallas pequeñas */
+    /* Mantener bordes redondeados */
     .fop2, .fop5, .fop6, .fop7, .fop8 {
-      border-radius: 20px;
+      border-radius: 30px;
     }
   }
