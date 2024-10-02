@@ -1,0 +1,103 @@
+.terapia-online-section {
+    padding: 60px $padding-general;
+    text-align: center;
+    font-family: $font-family-base;
+  
+    .terapia-online-contenedor {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: $padding-general;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Ajusta según tus necesidades
+  
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: $color-blue-dark;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        color: $color-blue-medium;
+      }
+  
+      .terapia-online-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px; // Espacio antes del botón
+  
+        .info-item {
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          padding: 20px;
+          transition: box-shadow $transition-time ease;
+  
+          h3 {
+            font-size: 1.5rem;
+            color: $color-blue-medium;
+            margin-bottom: 10px;
+          }
+  
+          p {
+            font-size: 1rem;
+            color: $color-blue-light;
+            margin-bottom: 15px;
+          }
+        }
+      }
+  
+      .btn-container {
+        margin-top: 30px; // Espacio adicional para el botón
+  
+        .btn-agendar {
+          background-color: $color-blue-dark;
+          color: #fff;
+          padding: 12px 30px;
+          border: none;
+          border-radius: 25px;
+          font-size: 1rem;
+          cursor: pointer;
+          text-decoration: none;
+          transition: background-color $transition-time ease;
+  
+          &:hover {
+            background-color: $color-blue-medium;
+          }
+        }
+      }
+    }
+  
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .terapia-online-contenedor {
+        padding: 15px;
+  
+        h2 {
+          font-size: 2rem;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+  
+        .terapia-online-info {
+          .info-item {
+            h3 {
+              font-size: 1.3rem;
+            }
+  
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+  
+        .btn-agendar {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }  

@@ -1,0 +1,58 @@
+.navbar {
+    background-color: $color-blue-dark;
+    border-radius: 40px;
+    padding: $padding-general;
+    margin: $padding-general 20px 0;
+    position: relative;
+    z-index: 1000;
+    transition: all $transition-time ease-in-out;
+  
+    .navbar-brand img {
+      width: 60px;
+      transition: width $transition-time ease;
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $color-beige;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 40px;
+        transition: background-color $transition-time ease, color $transition-time ease;
+  
+        &:hover,
+        &.active,
+        &:focus,
+        &:active {
+          background-color: $color-beige;
+          color: $color-blue-dark;
+          border-radius: 40px;
+        }
+      }
+    }
+  
+    .navbar-toggler {
+      border: none;
+      position: relative;
+      transition: box-shadow $transition-time ease, border-color $transition-time ease;
+  
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+  
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(226, 218, 214, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        transition: background-image $transition-time ease;
+  
+        &:hover {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(226, 218, 214, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+      }
+  
+      &:hover {
+        box-shadow: 0 0 0 1px $color-beige;
+      }
+    }
+  }

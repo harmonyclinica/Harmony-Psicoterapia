@@ -1,0 +1,348 @@
+footer {
+    background-color: #0B0F3C;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  
+    .contenedorf {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 0.4fr 0.4fr 0.4fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "fop1 fop1 fop1 fop1"
+        "fop2 fop3 fop4 fop5"
+        "fop6 fop6 fop7 fop7"
+        "fop8 fop8 fop8 fop8"
+        "fop9 fop9 fop9 fop9";
+  
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .fop1 {
+      grid-area: fop1;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 250px;
+      height: 200px;
+      gap: 20px;
+      color: #E2DAD6;
+    }
+  
+    .fop2,
+    .fop3,
+    .fop4,
+    .fop5 {
+      background-color: #E2DAD6;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      text-align: left;
+      gap: 15px;
+      padding: 30px;
+      height: 400px;
+      list-style-type: none;
+      border-radius: 20px;
+  
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+  
+      li {
+        text-align: left;
+      }
+    }
+  
+    .fop2 {
+      grid-area: fop2;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      margin-left: 50px;
+    }
+  
+    .fop3 { grid-area: fop3; }
+  
+    .fop4 { grid-area: fop4; }
+  
+    .fop5 {
+      grid-area: fop5;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      margin-right: 50px;
+    }
+  
+    .fop6,
+    .fop7 {
+      background-color: #3D56B2;
+      color: #E2DAD6;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 300px;
+  
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  
+    .fop6 {
+      grid-area: fop6;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      margin-left: 50px;
+    }
+  
+    .fop7 {
+      grid-area: fop7;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      margin-right: 50px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  
+    .redes-iconos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  
+      a {
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      img {
+        width: 50px;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  
+    .fop8 {
+      grid-area: fop8;
+      border-radius: 50px;
+      background-color: #E2DAD6;
+      margin-right: 50px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 300px;
+  
+      h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #0B0F3C;
+        margin: 0;
+      }
+    }
+  
+    .fop9 {
+      grid-area: fop9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 100px;
+      gap: 20px;
+      color: white;
+      font-size: 1rem;
+    }
+  
+    @media (max-width: 1280px) {
+      .contenedorf {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "fop1"
+          "fop2"
+          "fop3"
+          "fop4"
+          "fop5"
+          "fop6"
+          "fop7"
+          "fop8"
+          "fop9";
+      }
+  
+      .fop1,
+      .fop2,
+      .fop3,
+      .fop4,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8,
+      .fop9 {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 40px;
+        height: auto;
+        text-align: center;
+      }
+  
+      .fop2,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8 {
+        border-radius: 30px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .contenedorf {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "fop1"
+          "fop2"
+          "fop3"
+          "fop4"
+          "fop5"
+          "fop6"
+          "fop7"
+          "fop8"
+          "fop9";
+      }
+  
+      .fop1,
+      .fop2,
+      .fop3,
+      .fop4,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8,
+      .fop9 {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 30px;
+        height: auto;
+        text-align: center;
+      }
+  
+      .fop2,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8 {
+        border-radius: 20px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .contenedorf {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "fop1"
+          "fop2"
+          "fop3"
+          "fop4"
+          "fop5"
+          "fop6"
+          "fop7"
+          "fop8"
+          "fop9";
+      }
+  
+      .fop1,
+      .fop2,
+      .fop3,
+      .fop4,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8,
+      .fop9 {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+      }
+  
+      .fop2,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8 {
+        border-radius: 20px;
+      }
+  
+      .fop8 h2 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #0B0F3C;
+        margin: 0;
+      }
+    }
+  
+    @media (max-width: 360px) {
+      .contenedorf {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "fop1"
+          "fop2"
+          "fop3"
+          "fop4"
+          "fop5"
+          "fop6"
+          "fop7"
+          "fop8"
+          "fop9";
+      }
+  
+      .fop1,
+      .fop2,
+      .fop3,
+      .fop4,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8,
+      .fop9 {
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+      }
+  
+      .fop2,
+      .fop5,
+      .fop6,
+      .fop7,
+      .fop8 {
+        border-radius: 20px;
+      }
+    }
+  }  
