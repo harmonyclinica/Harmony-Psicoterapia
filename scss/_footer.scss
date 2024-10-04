@@ -62,6 +62,16 @@ footer {
       li {
         text-align: left;
       }
+
+      a {
+        color: $color-blue-dark;  /* Color del enlace */
+        text-decoration: none;    /* Elimina el subrayado */
+        transition: color 0.3s ease, transform 0.3s ease;
+  
+        &:hover {
+          color: lighten($color-blue-light, 10%);  /* Cambia el color al hacer hover */
+        }
+      }
     }
   
     .fop2 {
@@ -345,4 +355,4 @@ footer {
         border-radius: 20px;
       }
     }
-  }  
+  }

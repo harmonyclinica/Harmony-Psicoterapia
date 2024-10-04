@@ -126,6 +126,20 @@ footer .fop4 li,
 footer .fop5 li {
   text-align: left;
 }
+footer .fop2 a,
+footer .fop3 a,
+footer .fop4 a,
+footer .fop5 a {
+  color: #0B0F3C; /* Color del enlace */
+  text-decoration: none; /* Elimina el subrayado */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+footer .fop2 a:hover,
+footer .fop3 a:hover,
+footer .fop4 a:hover,
+footer .fop5 a:hover {
+  color: rgb(91.1506276151, 114.1631799163, 198.8493723849); /* Cambia el color al hacer hover */
+}
 footer .fop2 {
   grid-area: fop2;
   border-top-left-radius: 50px;
@@ -927,7 +941,7 @@ footer .fop9 {
     grid-auto-columns: 1fr;
     gap: 15px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "part1h" "part2h" "part3h" "part4h" "part5h" "part6h" "part7h" "part8h";
+    grid-template-areas: "part2h" "part1h" "part3h" "part4h" "part6h" "part5h" "part7h" "part8h";
   }
   .part1h {
     grid-area: part1h;
