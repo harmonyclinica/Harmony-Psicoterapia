@@ -1,6 +1,7 @@
-.principal {  display: grid;
+.principal {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto; // Allow automatic height adjustment
     grid-auto-columns: 1fr;
     gap: 40px 10px;
     grid-auto-flow: row;
@@ -9,132 +10,106 @@
       "part3h part4h"
       "part5h part6h"
       "part7h part8h";
-  }
   
-  .part1h { grid-area: part1h; }
+    // Asignaciones de las áreas para las partes del grid
+    .part1h { grid-area: part1h; }
+    .part2h { grid-area: part2h; }
+    .part3h { grid-area: part3h; }
+    .part4h { grid-area: part4h; }
+    .part5h { grid-area: part5h; }
+    .part6h { grid-area: part6h; }
+    .part7h { grid-area: part7h; }
+    .part8h { grid-area: part8h; }
   
-  .part2h { grid-area: part2h; }
+    // Estilos específicos para cada sección del grid
+    .part2h,
+    .part6h {
+      padding: 20px; // Ajuste de padding
+      margin-right: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      height: auto;
   
-  .part3h { grid-area: part3h; }
-  
-  .part4h { grid-area: part4h; }
-  
-  .part5h { grid-area: part5h; }
-  
-  .part6h { grid-area: part6h; }
-  
-  .part7h { grid-area: part7h; }
-  
-  .part8h { grid-area: part8h; }  
-  
-  .part2h {
-    padding: 40px;
-    margin-right: 40px;
-    display: flex; /* Activar flexbox */
-    flex-direction: column; /* Alinea los elementos en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: end; /* Centra horizontalmente */
-    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
-}
-
-.part2h p {
-    text-align: end; /* Alineación de texto al final */
-}
-
-.part2h h2{
-    text-align: end;
-    font-size: 3rem;
-}
-
-.part3h {
-    padding: 40px;
-    margin-left: 40px;
-    display: flex; /* Activar flexbox */
-    flex-direction: column; /* Alinea los elementos en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: start; /* Centra horizontalmente */
-    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
-}
-
-.part3h p {
-    text-align: start; /* Alineación de texto al final */
-}
-
-.part3h h2{
-    text-align: start;
-    font-size: 3rem;
-}
-
-.part6h {
-    padding: 40px;
-    margin-right: 40px;
-    display: flex; /* Activar flexbox */
-    flex-direction: column; /* Alinea los elementos en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: end; /* Centra horizontalmente */
-    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
-}
-
-.part6h p {
-    text-align: end; /* Alineación de texto al final */
-}
-
-.part6h h2{
-    text-align: end;
-    font-size: 3rem;
-}
-
-.part7h {
-    padding: 40px;
-    margin-left: 40px;
-    display: flex; /* Activar flexbox */
-    flex-direction: column; /* Alinea los elementos en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: start; /* Centra horizontalmente */
-    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
-}
-
-.part7h p {
-    text-align: start; /* Alineación de texto al final */
-}
-
-.part7h h2{
-    text-align: start;
-    font-size: 3rem;
-}
-  
-  /* Diseño para pantallas medianas */
-  @media (max-width: 768px) {
-    .principal {  display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-columns: 1fr;
-        gap: 15px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "part2h"
-          "part1h"
-          "part3h"
-          "part4h"
-          "part6h"
-          "part5h"
-          "part7h"
-          "part8h";
+      p {
+        text-align: end;
+        font-size: 1.2rem; // Tamaño de texto moderado
       }
-      
+  
+      h2 {
+        text-align: end;
+        font-size: 2rem; // Tamaño de encabezado moderado
+      }
+    }
+  
+    .part3h,
+    .part7h {
+      padding: 20px; // Ajuste de padding
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      height: auto;
+  
+      p {
+        text-align: start;
+        font-size: 1.2rem; // Tamaño de texto moderado
+      }
+  
+      h2 {
+        text-align: start;
+        font-size: 2rem; // Tamaño de encabezado moderado
+      }
+    }
+  
+    // Ajustes responsivos para pantallas pequeñas
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; // Ajuste de filas automáticas
+      gap: 15px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "part2h"
+        "part1h"
+        "part3h"
+        "part4h"
+        "part6h"
+        "part5h"
+        "part7h"
+        "part8h";
+  
+      // Reasignación de las áreas del grid
       .part1h { grid-area: part1h; }
-      
       .part2h { grid-area: part2h; }
-      
       .part3h { grid-area: part3h; }
-      
       .part4h { grid-area: part4h; }
-      
       .part5h { grid-area: part5h; }
-      
       .part6h { grid-area: part6h; }
-      
       .part7h { grid-area: part7h; }
-      
-      .part8h { grid-area: part8h; }      
-  }
+      .part8h { grid-area: part8h; }
+  
+      // Ajustes de estilos para pantallas pequeñas
+      .part2h,
+      .part3h,
+      .part6h,
+      .part7h {
+        padding: 20px; // Ajuste de padding
+        height: auto; // Eliminar altura fija
+        margin: 40px; // Agregar margen para dar más espacio a las cajas
+  
+        p {
+          font-size: 1.1rem; // Tamaño de texto ligeramente aumentado en móvil
+        }
+  
+        h2 {
+          font-size: 2.2rem; // Tamaño de encabezado ligeramente aumentado en móvil
+        }
+      }
+  
+      .principal {
+        gap: 10px; // Reducir el espacio entre los elementos del grid
+      }
+    }
+  }  

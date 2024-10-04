@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -70,25 +69,23 @@ footer {
 footer .contenedorf {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 0.4fr 0.4fr 0.4fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "fop1 fop1 fop1 fop1" "fop2 fop3 fop4 fop5" "fop6 fop6 fop7 fop7" "fop8 fop8 fop8 fop8" "fop9 fop9 fop9 fop9";
+  grid-template-rows: auto;
   gap: 20px;
   padding: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "fop1 fop1 fop1 fop1" "fop2 fop3 fop4 fop5" "fop6 fop6 fop7 fop7" "fop8 fop8 fop8 fop8" "fop9 fop9 fop9 fop9";
 }
 footer .fop1 {
   grid-area: fop1;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin: 50px 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   text-align: center;
-  padding: 250px;
-  height: 200px;
+  padding: 20px;
+  height: auto;
   gap: 20px;
   color: #E2DAD6;
 }
@@ -104,8 +101,8 @@ footer .fop5 {
   font-size: 1.1rem;
   text-align: left;
   gap: 15px;
-  padding: 30px;
-  height: 400px;
+  padding: 40px;
+  height: auto;
   list-style-type: none;
   border-radius: 20px;
 }
@@ -208,16 +205,16 @@ footer .redes-iconos img {
 }
 footer .fop8 {
   grid-area: fop8;
+  padding: 40px;
   border-radius: 50px;
   background-color: #E2DAD6;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin: 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 300px;
+  height: auto;
 }
 footer .fop8 h2 {
   font-size: 3rem;
@@ -357,6 +354,12 @@ footer .fop9 {
   footer .fop7,
   footer .fop8 {
     border-radius: 20px;
+  }
+  footer .fop8 h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0B0F3C;
+    margin: 0;
   }
 }
 
@@ -813,155 +816,130 @@ footer .fop9 {
 .principal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-auto-columns: 1fr;
   gap: 40px 10px;
   grid-auto-flow: row;
   grid-template-areas: "part1h part2h" "part3h part4h" "part5h part6h" "part7h part8h";
 }
-
-.part1h {
+.principal .part1h {
   grid-area: part1h;
 }
-
-.part2h {
+.principal .part2h {
   grid-area: part2h;
 }
-
-.part3h {
+.principal .part3h {
   grid-area: part3h;
 }
-
-.part4h {
+.principal .part4h {
   grid-area: part4h;
 }
-
-.part5h {
+.principal .part5h {
   grid-area: part5h;
 }
-
-.part6h {
+.principal .part6h {
   grid-area: part6h;
 }
-
-.part7h {
+.principal .part7h {
   grid-area: part7h;
 }
-
-.part8h {
+.principal .part8h {
   grid-area: part8h;
 }
-
-.part2h {
-  padding: 40px;
+.principal .part2h,
+.principal .part6h {
+  padding: 20px;
   margin-right: 40px;
-  display: flex; /* Activar flexbox */
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Centra verticalmente */
-  align-items: end; /* Centra horizontalmente */
-  height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  height: auto;
 }
-
-.part2h p {
-  text-align: end; /* Alineación de texto al final */
-}
-
-.part2h h2 {
+.principal .part2h p,
+.principal .part6h p {
   text-align: end;
-  font-size: 3rem;
+  font-size: 1.2rem;
 }
-
-.part3h {
-  padding: 40px;
-  margin-left: 40px;
-  display: flex; /* Activar flexbox */
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Centra verticalmente */
-  align-items: start; /* Centra horizontalmente */
-  height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
-}
-
-.part3h p {
-  text-align: start; /* Alineación de texto al final */
-}
-
-.part3h h2 {
-  text-align: start;
-  font-size: 3rem;
-}
-
-.part6h {
-  padding: 40px;
-  margin-right: 40px;
-  display: flex; /* Activar flexbox */
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Centra verticalmente */
-  align-items: end; /* Centra horizontalmente */
-  height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
-}
-
-.part6h p {
-  text-align: end; /* Alineación de texto al final */
-}
-
-.part6h h2 {
+.principal .part2h h2,
+.principal .part6h h2 {
   text-align: end;
-  font-size: 3rem;
+  font-size: 2rem;
 }
-
-.part7h {
-  padding: 40px;
+.principal .part3h,
+.principal .part7h {
+  padding: 20px;
   margin-left: 40px;
-  display: flex; /* Activar flexbox */
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Centra verticalmente */
-  align-items: start; /* Centra horizontalmente */
-  height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: auto;
 }
-
-.part7h p {
-  text-align: start; /* Alineación de texto al final */
-}
-
-.part7h h2 {
+.principal .part3h p,
+.principal .part7h p {
   text-align: start;
-  font-size: 3rem;
+  font-size: 1.2rem;
 }
-
-/* Diseño para pantallas medianas */
+.principal .part3h h2,
+.principal .part7h h2 {
+  text-align: start;
+  font-size: 2rem;
+}
 @media (max-width: 768px) {
   .principal {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
     gap: 15px 0px;
     grid-auto-flow: row;
     grid-template-areas: "part2h" "part1h" "part3h" "part4h" "part6h" "part5h" "part7h" "part8h";
   }
-  .part1h {
+  .principal .part1h {
     grid-area: part1h;
   }
-  .part2h {
+  .principal .part2h {
     grid-area: part2h;
   }
-  .part3h {
+  .principal .part3h {
     grid-area: part3h;
   }
-  .part4h {
+  .principal .part4h {
     grid-area: part4h;
   }
-  .part5h {
+  .principal .part5h {
     grid-area: part5h;
   }
-  .part6h {
+  .principal .part6h {
     grid-area: part6h;
   }
-  .part7h {
+  .principal .part7h {
     grid-area: part7h;
   }
-  .part8h {
+  .principal .part8h {
     grid-area: part8h;
+  }
+  .principal .part2h,
+  .principal .part3h,
+  .principal .part6h,
+  .principal .part7h {
+    padding: 20px;
+    height: auto;
+    margin: 40px;
+  }
+  .principal .part2h p,
+  .principal .part3h p,
+  .principal .part6h p,
+  .principal .part7h p {
+    font-size: 1.1rem;
+  }
+  .principal .part2h h2,
+  .principal .part3h h2,
+  .principal .part6h h2,
+  .principal .part7h h2 {
+    font-size: 2.2rem;
+  }
+  .principal .principal {
+    gap: 10px;
   }
 }
 
