@@ -1,5 +1,5 @@
 footer {
-    background-color: #0B0F3C;
+    background-color: $color-blue-dark;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -34,14 +34,14 @@ footer {
       padding: 250px;
       height: 200px;
       gap: 20px;
-      color: #E2DAD6;
+      color: $color-beige;
     }
   
     .fop2,
     .fop3,
     .fop4,
     .fop5 {
-      background-color: #E2DAD6;
+      background-color: $color-beige;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -84,8 +84,8 @@ footer {
   
     .fop6,
     .fop7 {
-      background-color: #3D56B2;
-      color: #E2DAD6;
+      background-color: $color-blue-light;
+      color: $color-beige;
       border-radius: 50px;
       display: flex;
       flex-direction: column;
@@ -144,7 +144,7 @@ footer {
     .fop8 {
       grid-area: fop8;
       border-radius: 50px;
-      background-color: #E2DAD6;
+      background-color: $color-beige;
       margin-right: 50px;
       margin-left: 50px;
       display: flex;
@@ -157,7 +157,7 @@ footer {
       h2 {
         font-size: 3rem;
         font-weight: bold;
-        color: #0B0F3C;
+        color: $color-blue-dark;
         margin: 0;
       }
     }

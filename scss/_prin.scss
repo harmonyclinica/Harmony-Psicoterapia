@@ -1,0 +1,140 @@
+.principal {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 40px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "part1h part2h"
+      "part3h part4h"
+      "part5h part6h"
+      "part7h part8h";
+  }
+  
+  .part1h { grid-area: part1h; }
+  
+  .part2h { grid-area: part2h; }
+  
+  .part3h { grid-area: part3h; }
+  
+  .part4h { grid-area: part4h; }
+  
+  .part5h { grid-area: part5h; }
+  
+  .part6h { grid-area: part6h; }
+  
+  .part7h { grid-area: part7h; }
+  
+  .part8h { grid-area: part8h; }  
+  
+  .part2h {
+    padding: 40px;
+    margin-right: 40px;
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: end; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
+}
+
+.part2h p {
+    text-align: end; /* Alineación de texto al final */
+}
+
+.part2h h2{
+    text-align: end;
+    font-size: 3rem;
+}
+
+.part3h {
+    padding: 40px;
+    margin-left: 40px;
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: start; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
+}
+
+.part3h p {
+    text-align: start; /* Alineación de texto al final */
+}
+
+.part3h h2{
+    text-align: start;
+    font-size: 3rem;
+}
+
+.part6h {
+    padding: 40px;
+    margin-right: 40px;
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: end; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
+}
+
+.part6h p {
+    text-align: end; /* Alineación de texto al final */
+}
+
+.part6h h2{
+    text-align: end;
+    font-size: 3rem;
+}
+
+.part7h {
+    padding: 40px;
+    margin-left: 40px;
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: start; /* Centra horizontalmente */
+    height: 100%; /* Asegura que ocupe toda la altura de la caja contenedora */
+}
+
+.part7h p {
+    text-align: start; /* Alineación de texto al final */
+}
+
+.part7h h2{
+    text-align: start;
+    font-size: 3rem;
+}
+  
+  /* Diseño para pantallas medianas */
+  @media (max-width: 768px) {
+    .principal {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 15px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "part1h"
+          "part2h"
+          "part3h"
+          "part4h"
+          "part5h"
+          "part6h"
+          "part7h"
+          "part8h";
+      }
+      
+      .part1h { grid-area: part1h; }
+      
+      .part2h { grid-area: part2h; }
+      
+      .part3h { grid-area: part3h; }
+      
+      .part4h { grid-area: part4h; }
+      
+      .part5h { grid-area: part5h; }
+      
+      .part6h { grid-area: part6h; }
+      
+      .part7h { grid-area: part7h; }
+      
+      .part8h { grid-area: part8h; }      
+  }
