@@ -1,102 +1,29 @@
-.contacto-section {
-    background-color: $color-beige;
-    padding: 60px $padding-general;
-    text-align: center;
-    font-family: $font-family-base;
-  
-    .contacto-contenedor {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: $padding-general;
-      border-radius: 15px;
-      background-color: #fff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Puedes ajustar este valor si tienes una variable para el box-shadow
-  
-      h2 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        color: $color-blue-dark;
-      }
-  
-      p {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
-        color: $color-blue-medium;
-      }
-  
-      .formulario {
-        text-align: left;
-  
-        .form-group {
-          margin-bottom: 20px;
-  
-          label {
-            display: block;
-            font-size: 1rem;
-            margin-bottom: 10px;
-            color: $color-blue-dark;
-          }
-  
-          input,
-          textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: $color-beige;
-  
-            &:focus {
-              outline: none;
-              border-color: $color-blue-dark;
-            }
-          }
-        }
-  
-        .btn-enviar {
-          background-color: $color-blue-dark;
-          color: #fff;
-          padding: 12px 30px;
-          border: none;
-          border-radius: 25px;
-          font-size: 1rem;
-          cursor: pointer;
-          transition: background-color $transition-time ease;
-          width: 100%;
-  
-          &:hover {
-            background-color: $color-blue-medium;
-          }
-        }
-      }
-    }
-  
-    /* Media Queries */
-    @media (max-width: 768px) {
-      .contacto-contenedor {
-        padding: 15px;
-  
-        h2 {
-          font-size: 2rem;
-        }
-  
-        p {
-          font-size: 1rem;
-        }
-  
-        .formulario {
-          .form-group {
-            input,
-            textarea {
-              font-size: 0.9rem;
-            }
-          }
-  
-          .btn-enviar {
-            font-size: 0.9rem;
-          }
-        }
-      }
-    }
+.iframecontact {
+  display: flex; // Usamos Flexbox para centrar
+  justify-content: center; // Centrar horizontalmente
+  align-items: center; // Centrar verticalmente
+
+}
+
+main div{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main div iframe{
+  width: 1000px;
+  height: 1650px;
+  frameborder: 0px;
+  marginheight: 0px;
+  marginwidth: 0px;
+}
+
+@media (max-width: 768px) {
+  main div iframe{
+    width: 450px;
+    height: 1700px;
+    frameborder: 0px;
+    marginheight: 0px;
+    marginwidth: 0px;
   }
-  
+}
