@@ -27,3 +27,13 @@ main div iframe{
     marginwidth: 0px;
   }
 }
+
+@media (max-width: 480px) {
+  main div iframe{
+    width: 350px;
+    height: 1830px;
+    frameborder: 0px;
+    marginheight: 0px;
+    marginwidth: 0px;
+  }
+}

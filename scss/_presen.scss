@@ -70,35 +70,4 @@
         }
       }
     }
-  
-    /* Media Queries */
-    @media (max-width: 768px) {
-      .presentacion-contenedor {
-        padding: 15px;
-  
-        h2 {
-          font-size: 2rem;
-        }
-  
-        p {
-          font-size: 1rem;
-        }
-  
-        .presentacion-info {
-          .info-item {
-            h3 {
-              font-size: 1.3rem;
-            }
-  
-            p {
-              font-size: 0.9rem;
-            }
-          }
-        }
-  
-        .btn-agendar {
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }  
+  }

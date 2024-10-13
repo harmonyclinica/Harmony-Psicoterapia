@@ -434,12 +434,20 @@ main div iframe {
     marginwidth: 0px;
   }
 }
+@media (max-width: 480px) {
+  main div iframe {
+    width: 350px;
+    height: 1830px;
+    frameborder: 0px;
+    marginheight: 0px;
+    marginwidth: 0px;
+  }
+}
 .novedades-section {
   background-color: #E2DAD6;
   padding: 60px 20px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  /* Media Queries */
 }
 .novedades-section .novedades-contenedor {
   max-width: 800px;
@@ -495,29 +503,11 @@ main div iframe {
 .novedades-section .novedades-contenedor .novedades-lista .novedad-item .btn-leer-mas:hover {
   background-color: #14279B;
 }
-@media (max-width: 768px) {
-  .novedades-section .novedades-contenedor {
-    padding: 15px;
-  }
-  .novedades-section .novedades-contenedor h2 {
-    font-size: 2rem;
-  }
-  .novedades-section .novedades-contenedor p {
-    font-size: 1rem;
-  }
-  .novedades-section .novedades-contenedor .novedades-lista .novedad-item h3 {
-    font-size: 1.3rem;
-  }
-  .novedades-section .novedades-contenedor .novedades-lista .novedad-item p {
-    font-size: 0.9rem;
-  }
-}
 
 .servicios-section {
   padding: 60px 20px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  /* Media Queries */
 }
 .servicios-section .servicios-contenedor {
   max-width: 800px;
@@ -573,29 +563,11 @@ main div iframe {
 .servicios-section .servicios-contenedor .servicios-lista .servicio-item .btn-mas-info:hover {
   background-color: #14279B;
 }
-@media (max-width: 768px) {
-  .servicios-section .servicios-contenedor {
-    padding: 15px;
-  }
-  .servicios-section .servicios-contenedor h2 {
-    font-size: 2rem;
-  }
-  .servicios-section .servicios-contenedor p {
-    font-size: 1rem;
-  }
-  .servicios-section .servicios-contenedor .servicios-lista .servicio-item h3 {
-    font-size: 1.3rem;
-  }
-  .servicios-section .servicios-contenedor .servicios-lista .servicio-item p {
-    font-size: 0.9rem;
-  }
-}
 
 .terapia-online-section {
   padding: 60px 20px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  /* Media Queries */
 }
 .terapia-online-section .terapia-online-contenedor {
   max-width: 800px;
@@ -655,32 +627,11 @@ main div iframe {
 .terapia-online-section .terapia-online-contenedor .btn-container .btn-agendar:hover {
   background-color: #14279B;
 }
-@media (max-width: 768px) {
-  .terapia-online-section .terapia-online-contenedor {
-    padding: 15px;
-  }
-  .terapia-online-section .terapia-online-contenedor h2 {
-    font-size: 2rem;
-  }
-  .terapia-online-section .terapia-online-contenedor p {
-    font-size: 1rem;
-  }
-  .terapia-online-section .terapia-online-contenedor .terapia-online-info .info-item h3 {
-    font-size: 1.3rem;
-  }
-  .terapia-online-section .terapia-online-contenedor .terapia-online-info .info-item p {
-    font-size: 0.9rem;
-  }
-  .terapia-online-section .terapia-online-contenedor .btn-agendar {
-    font-size: 0.9rem;
-  }
-}
 
 .presentacion-section {
   padding: 60px 20px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  /* Media Queries */
 }
 .presentacion-section .presentacion-contenedor {
   max-width: 800px;
@@ -739,26 +690,6 @@ main div iframe {
 }
 .presentacion-section .presentacion-contenedor .btn-container .btn-agendar:hover {
   background-color: #14279B;
-}
-@media (max-width: 768px) {
-  .presentacion-section .presentacion-contenedor {
-    padding: 15px;
-  }
-  .presentacion-section .presentacion-contenedor h2 {
-    font-size: 2rem;
-  }
-  .presentacion-section .presentacion-contenedor p {
-    font-size: 1rem;
-  }
-  .presentacion-section .presentacion-contenedor .presentacion-info .info-item h3 {
-    font-size: 1.3rem;
-  }
-  .presentacion-section .presentacion-contenedor .presentacion-info .info-item p {
-    font-size: 0.9rem;
-  }
-  .presentacion-section .presentacion-contenedor .btn-agendar {
-    font-size: 0.9rem;
-  }
 }
 
 .principal {
