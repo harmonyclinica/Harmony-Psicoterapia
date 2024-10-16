@@ -1,39 +1,32 @@
-.iframecontact {
+.framemai {
   display: flex; // Usamos Flexbox para centrar
   justify-content: center; // Centrar horizontalmente
   align-items: center; // Centrar verticalmente
 
-}
+  div {
+    width: 100%; // Asegura que el contenedor div ocupe el ancho completo
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-main div{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-main div iframe{
-  width: 1000px;
-  height: 1650px;
-  frameborder: 0px;
-  marginheight: 0px;
-  marginwidth: 0px;
+  iframe {
+    width: 1000px;
+    height: 1750px;
+  }
 }
 
 @media (max-width: 768px) {
-  main div iframe{
-    width: 450px;
-    height: 1700px;
-    frameborder: 0px;
-    marginheight: 0px;
-    marginwidth: 0px;
+  .framemai iframe {
+    width: 500px;
+    height: 1800px;
   }
 }
 
 @media (max-width: 480px) {
-  main div iframe{
-    width: 350px;
-    height: 1840px;
-    frameborder: 0px;
-    marginheight: 0px;
-    marginwidth: 0px;
+  .framemai iframe {
+    width: 350px; // Se adapta al ancho del contenedor
+    height: 2180px;
   }
 }

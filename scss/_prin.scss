@@ -1,5 +1,6 @@
 .principal {
     display: grid;
+    font-family: "Raleway", sans-serif;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; // Allow automatic height adjustment
     grid-auto-columns: 1fr;
