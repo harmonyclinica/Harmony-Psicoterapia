@@ -1,6 +1,6 @@
 footer {
   background-color: $color-blue-dark;
-  font-family: "Raleway", sans-serif;
+  font-family: $font-family-base;
   font-optical-sizing: auto;
   font-style: normal;
 
@@ -61,12 +61,12 @@ footer {
     }
 
     a {
-      color: $color-blue-dark; /* Color del enlace */
-      text-decoration: none; /* Elimina el subrayado */
+      color: $color-blue-dark; // Color del enlace
+      text-decoration: none; // Elimina el subrayado
       transition: color 0.3s ease, transform 0.3s ease;
 
       &:hover {
-        color: lighten($color-blue-light, 10%); /* Cambia el color al hacer hover */
+        color: lighten($color-blue-light, 10%); // Cambia el color al hacer hover
       }
     }
   }
@@ -78,9 +78,13 @@ footer {
     margin-left: 50px;
   }
 
-  .fop3 { grid-area: fop3; }
+  .fop3 {
+    grid-area: fop3;
+  }
 
-  .fop4 { grid-area: fop4; }
+  .fop4 {
+    grid-area: fop4;
+  }
 
   .fop5 {
     grid-area: fop5;
@@ -183,6 +187,7 @@ footer {
     font-size: 1rem;
   }
 
+  // Media queries
   @media (max-width: 1280px) {
     .contenedorf {
       grid-template-columns: 1fr;
@@ -328,7 +333,7 @@ footer {
         "fop8"
         "fop9";
     }
-  
+
     .fop1,
     .fop2,
     .fop3,
@@ -343,7 +348,7 @@ footer {
       height: auto;
       padding: 20px;
     }
-  
+
     .fop2,
     .fop5,
     .fop6,
@@ -351,7 +356,7 @@ footer {
     .fop8 {
       border-radius: 20px;
     }
-  
+
     .fop8 h2 {
       font-size: 1rem;
       font-weight: bold;

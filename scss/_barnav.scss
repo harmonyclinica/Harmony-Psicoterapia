@@ -1,0 +1,99 @@
+.navbar {
+    background-color: $color-blue-dark;
+    font-family: $font-family-base;
+    border-radius: 40px;
+    padding: $padding-general;
+    margin: $padding-general 20px 0;
+    position: relative;
+    z-index: 1000;
+    transition: all $transition-time ease-in-out;
+  
+    .navbar-brand img {
+      width: 60px;
+      transition: width $transition-time ease;
+    }
+  
+    .navbar-nav {
+        .nav-link {
+          color: $color-beige;
+          font-size: 18px;
+          padding: 10px;
+          margin: 10px;
+          border-radius: 40px;
+          transition: background-color $transition-time ease, color $transition-time ease;
+      
+          &:hover,
+          &:focus {
+            background-color: $color-beige;
+            color: $color-blue-dark;
+            border-radius: 40px;
+          }
+      
+          &:active {
+            background-color: $color-blue-medium;
+            color: $color-beige;
+          }
+        }
+      }      
+  
+    .navbar-toggler {
+      border: none;
+      position: relative;
+      transition: box-shadow $transition-time ease, border-color $transition-time ease;
+  
+      &:focus {
+        outline: none; // Eliminamos el borde en el estado focus
+        box-shadow: none; // También eliminamos cualquier sombra
+      }
+  
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(226, 218, 214, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        transition: background-image $transition-time ease;
+      }
+  
+      &:hover {
+        box-shadow: 0 0 0 1px $color-beige; // Solo aparece el borde en hover
+      }
+    }
+  }
+  
+  .dropdown-menu {
+    background-color: $color-blue-dark;
+    font-family: $font-family-base;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all $transition-time ease;
+  
+    .dropdown-item {
+      background-color: transparent;
+      color: $color-beige;
+      padding: 12px 20px;
+      border-radius: 20px;
+      margin: 10px 0;
+      transition: background-color $transition-time ease, color $transition-time ease;
+  
+      &:hover {
+        background-color: $color-beige;
+        color: $color-blue-dark;
+      }
+  
+      &:active {
+        background-color: $color-blue-medium;
+        color: $color-beige;
+      }
+    }
+  }
+  
+  .nav-link.dropdown-toggle {
+    background-color: transparent;
+    font-family: $font-family-base;
+    color: $color-beige;
+    border-radius: 20px;
+  
+    &:hover {
+      background-color: $color-beige;
+      color: $color-blue-dark;
+    }
+  }
